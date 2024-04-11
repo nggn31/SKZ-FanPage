@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style/style-reproductor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Mixtape</title>
+  </head>
+  <body>
+    <div class="container-play">
+      <!-----------IMAGEN DEL REPRODUCTOR-------------- -->
+      <div class="player_img">
+        <img src="imgs_audio/img-1.jpg" id="cover" class="active" />
+      </div>
+      <!--============Player Content -->
+      <div class="title1">
+      <h2 id="music_title">Mixtape</h2>
+    </div>
+    <div class="title2">
+      <h3 id="musric_artist">Stray kids</h3>
+    </div>
+      <!-------------Tiempo------------- -->
+      <div class="player_progress" id="player_progress">
+        <div class="progress" id="progress">
+          <div class="music_duration">
+            <span id="current_time">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+        </div>
+      </div>
+      <!----------------Controles---------->
+      <div class="player_controls">
+        <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
+        <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
+        <i class="fa-solid fa-forward" title="Next" id="next"></i>
+      </div>
+    </div>
+  </body>
+  <script defer src="../js/script.js"></script>
+  <script src="../js/mixtape-songs.js"></script>
+</html>

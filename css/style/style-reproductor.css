@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+ body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 0.8rem;
+  overflow: hidden;
+  background-color: gray;
+}
+.container-play {
+  background-color: #fefefe;
+  width: 400px;
+  height: 533px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+.player_img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 35px;
+  left: 50px;
+}
+.player_img img {
+  object-fit: cover;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.1);
+}
+.player_img img.active {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.title1 h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 53px;
+}
+.title2 h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: #c6bfbf;
+}
+.player_progress {
+  background-color: #c6bfbf;
+  border-radius: 5px;
+  height: 6px;
+  width: 90%;
+  margin: 24px 20px 35px;
+  position: relative;
+  cursor: pointer;
+}
+.progress {
+  background-color: #212121;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: all 0.2s linear;
+}
+.music_duration {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+}
+.player_controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-solid {
+  font-size: 30px;
+  color: #666;
+  cursor: pointer;
+  margin-right: 30px;
+  user-select: none;
+  transition: all 0.3s ease-in;
+}
+.fa-solid:hover {
+  filter: brightness(40%);
+}
+.play-button {
+  font-size: 44px;
+}
